@@ -5,7 +5,7 @@ function App() {
     <>
       <div className="flex flex-col gap-2 bg-zinc-700">
         <div className="backgroundimage">
-          <div className="w-screen background h-screen">
+          <div className="w-screen background h-[90vh]">
             <div className="py-6 px-8 max-w-[1250px] mx-auto flex justify-between">
               <img src={logo} className="w-[148px] h-[40px]"></img>
               <div className="flex gap-3">
@@ -40,7 +40,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="flex w-screen h-[60vh] bg-black items-center justify-center text-white min-w-[600px]">
+        <div className="flex w-screen h-[60vh] bg-black items-center justify-center text-white min-h-[500px]">
           <div className="w-1/3 flex flex-col gap-5">
             <div className="text-6xl text flex font-extrabold">
               Enjoy on your TV
@@ -60,7 +60,7 @@ function App() {
             />
           </div>
         </div>
-        <div className="flex w-screen h-[60vh] bg-black items-center justify-center text-white  min-w-[600px]">
+        <div className="flex w-screen h-[60vh] bg-black items-center justify-center text-white  min-h-[500px]">
           <div className="w-1/3">
             <img src="/phone.jpg" />
           </div>
@@ -73,7 +73,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="flex w-screen h-[60vh] bg-black items-center justify-center text-white  min-w-[600px]">
+        <div className="flex w-screen h-[60vh] bg-black items-center justify-center text-white  min-h-[500px]">
           <div className="w-1/3 flex flex-col gap-5">
             <div className="text-6xl text flex font-extrabold">
               Watch everywhere
@@ -84,16 +84,16 @@ function App() {
             </div>
           </div>
           <div className="w-1/3 relative min-w-[500px]">
-            <video autoPlay loop className="px-16">
+            <video autoPlay loop className="px-16" width="530px">
               <source src="/video2.mp4" type="video/mp4" />
             </video>
             <img
               src="/mactv.png"
-              style={{ position: "absolute", left: "2%", top: "-35%" }}
+              style={{ position: "absolute", left: "-7%", top: "-18%" }}
             />
           </div>
         </div>
-        <div className="flex w-screen h-[60vh] bg-black items-center justify-center text-white  min-w-[600px]">
+        <div className="flex w-screen h-[60vh] bg-black items-center justify-center text-white  min-h-[500px]">
           <div className="w-1/3">
             <img src="/children.png" />
           </div>
@@ -108,8 +108,46 @@ function App() {
           </div>
         </div>
 
-        <div className="w-screen h-[60vh] bg-black"></div>
-        <div className="w-screen h-[60vh] bg-black"></div>
+        <div className="flex w-screen h-[60vh] bg-black items-center justify-center text-[#a9b1b3]  min-h-[400px] max-h-[400px] font-sans">
+          <div className="max-w-[1196px] min-w-[800px] min-h-[250px] w-full flex flex-col gap-2">
+            <div>
+              Questions? Call <u>000-800-919-1694</u>
+            </div>
+            <div className="py-4 flex justify-between">
+              <div className="flex flex-col gap-4">
+                <u>FAQ</u>
+                <u>Investor Relations</u>
+                <u>Privacy</u>
+                <u>Speed Test</u>
+              </div>
+              <div className="flex flex-col gap-4">
+                <u>Help Centre</u>
+                <u>Jobs</u>
+                <u>Cookie Preferences</u>
+                <u>Legal Notices</u>
+              </div>
+              <div className="flex flex-col gap-4">
+                <u>Account</u>
+                <u>Ways to Watch</u>
+                <u>Corporate Information</u>
+                <u>Only on Netflix</u>
+              </div>
+              <div className="flex flex-col gap-4">
+                <u>Media Centre</u>
+                <u>Terms of Use</u>
+                <u>Contact Us</u>
+              </div>
+            </div>
+            <div>
+              <select className="bg-gray-950 border border-gray-400 rounded-sm px-3 text-white py-1">
+                <option value="">English</option>
+                <option value="">हिंदी</option>
+                <option value="">தமிழ்</option>
+              </select>
+            </div>
+            <div>Netflix India</div>
+          </div>
+        </div>
       </div>
     </>
   );
